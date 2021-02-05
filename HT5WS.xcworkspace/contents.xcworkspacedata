@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:sec anim/sec anim.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ht5/ht5.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:ht5-main-task/ht5-main-task.xcodeproj">
+   </FileRef>
+</Workspace>

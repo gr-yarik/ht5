@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zhi-gr-70A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation Page View Controller-->
+        <scene sceneID="wmZ-qx-p1q">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="zhi-gr-70A" customClass="AnimationPageViewController" customModule="ht5_main_task" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzC-cp-zOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="91"/>
+        </scene>
+        <!--Snow View Controller-->
+        <scene sceneID="6az-23-tkF">
+            <objects>
+                <viewController storyboardIdentifier="SnowVC" id="3g0-6N-3IE" customClass="SnowViewController" customModule="ht5_main_task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOY-fQ-xoq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qsw-L8-jGg">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7D-bI-tbm">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="3g0-6N-3IE" eventType="touchUpInside" id="oQV-ar-hyy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFI-u5-trG">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButtonPressed:" destination="3g0-6N-3IE" eventType="touchUpInside" id="UHJ-ZI-6xo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cMt-r5-nF7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CD9-a1-jFI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CD9-a1-jFI" firstAttribute="trailing" secondItem="qsw-L8-jGg" secondAttribute="trailing" constant="20" id="OTL-jT-j6J"/>
+                            <constraint firstItem="CD9-a1-jFI" firstAttribute="bottom" secondItem="qsw-L8-jGg" secondAttribute="bottom" id="eMP-gm-HSo"/>
+                            <constraint firstItem="qsw-L8-jGg" firstAttribute="leading" secondItem="CD9-a1-jFI" secondAttribute="leading" constant="20" id="xtN-bA-e06"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVI-xb-bzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="78"/>
+        </scene>
+        <!--Fireworks View Controller-->
+        <scene sceneID="fcA-69-jeY">
+            <objects>
+                <viewController storyboardIdentifier="FireworksVC" id="plA-Dn-Im7" customClass="FireworksViewController" customModule="ht5_main_task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNn-hP-ile">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xDB-81-Usc">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gI-WD-qBe">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="plA-Dn-Im7" eventType="touchUpInside" id="dwk-wu-gUN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnX-Z0-oRh">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButtonPressed:" destination="plA-Dn-Im7" eventType="touchUpInside" id="SIz-H8-dfO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jmc-X2-DLs"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seattle" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-ha-80c">
+                                <rect key="frame" x="0.0" y="588" width="414" height="224"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="izS-La-WbG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="izS-La-WbG" firstAttribute="trailing" secondItem="dU9-ha-80c" secondAttribute="trailing" id="GJx-ID-Iuu"/>
+                            <constraint firstItem="izS-La-WbG" firstAttribute="bottom" secondItem="xDB-81-Usc" secondAttribute="bottom" id="HSn-G2-p6X"/>
+                            <constraint firstItem="xDB-81-Usc" firstAttribute="top" secondItem="dU9-ha-80c" secondAttribute="bottom" id="UX9-x8-5jJ"/>
+                            <constraint firstItem="xDB-81-Usc" firstAttribute="leading" secondItem="izS-La-WbG" secondAttribute="leading" constant="20" id="aSq-pB-1o0"/>
+                            <constraint firstItem="izS-La-WbG" firstAttribute="trailing" secondItem="xDB-81-Usc" secondAttribute="trailing" constant="20" id="dBB-e9-qsD"/>
+                            <constraint firstItem="dU9-ha-80c" firstAttribute="height" secondItem="eNn-hP-ile" secondAttribute="height" multiplier="1/4" id="mDT-u4-23a"/>
+                            <constraint firstItem="dU9-ha-80c" firstAttribute="leading" secondItem="izS-La-WbG" secondAttribute="leading" id="rSI-KU-wz8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dU9-ha-80c" id="lZq-Jw-8ad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Otj-Pq-Ljp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462.3188405797105" y="77.678571428571431"/>
+        </scene>
+        <!--Confetti View Controller-->
+        <scene sceneID="v8l-pw-MXh">
+            <objects>
+                <viewController storyboardIdentifier="ConfettiVC" id="Tig-Yj-QE7" customClass="ConfettiViewController" customModule="ht5_main_task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OqP-Bw-Tls">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UF8-gq-VcV">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o6-ji-MjN">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="Tig-Yj-QE7" eventType="touchUpInside" id="y9l-em-e0l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFm-5h-ERn">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButtonPressed:" destination="Tig-Yj-QE7" eventType="touchUpInside" id="zsg-Zv-Tkd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YGb-MM-HWn"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birthday-cake" translatesAutoresizingMaskIntoConstraints="NO" id="OF4-QN-9cu">
+                                <rect key="frame" x="97" y="572" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Jlx-gQ-BPV"/>
+                                    <constraint firstAttribute="width" secondItem="OF4-QN-9cu" secondAttribute="height" id="gGK-ng-6rW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OMx-d9-J86"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UF8-gq-VcV" firstAttribute="top" secondItem="OF4-QN-9cu" secondAttribute="bottom" constant="20" id="Esb-kl-WVT"/>
+                            <constraint firstItem="OMx-d9-J86" firstAttribute="trailing" secondItem="UF8-gq-VcV" secondAttribute="trailing" constant="20" id="QhN-Dw-Cjs"/>
+                            <constraint firstItem="UF8-gq-VcV" firstAttribute="leading" secondItem="OMx-d9-J86" secondAttribute="leading" constant="20" id="VFV-ca-8aB"/>
+                            <constraint firstItem="OF4-QN-9cu" firstAttribute="centerX" secondItem="OMx-d9-J86" secondAttribute="centerX" id="ave-KR-SIY"/>
+                            <constraint firstItem="OMx-d9-J86" firstAttribute="bottom" secondItem="UF8-gq-VcV" secondAttribute="bottom" id="rIt-we-Xct"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1L-bR-ZW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="birthday-cake" width="223" height="261"/>
+        <image name="seattle" width="615" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
