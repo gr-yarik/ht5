@@ -20,6 +20,11 @@ class AnimationPageViewController: UIPageViewController {
 extension AnimationPageViewController: UIPageViewControllerDataSource {
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        /*
+         It's better to create an enum based on String and use its rawValue as a title for a controller,
+         and switch on the enum itself here. It's a bad decision to switch on strings cause you are not protected
+         from typos by the compiler.
+         */
         switch viewController.title {
         case "Confetti":
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "SnowVC") as? SnowViewController else { return nil}

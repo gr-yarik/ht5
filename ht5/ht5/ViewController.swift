@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    /*
+     It's better to use implicitly unwrapped optionals for such cases.
+     If you ever receive a crash with them, it means that you have a logic error and your code works incorrectly anyway.
+     */
     var pulse1, pulse2, pulse3: Pulsing?
     
     @IBOutlet weak var startButton: UIButton!

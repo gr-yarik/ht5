@@ -7,6 +7,10 @@
 
 import UIKit
 
+/*
+ This code belongs to the view part of the app (by its nature 🙂). It's ok that you tried to
+ separate everything, but I think that this wasn't necessary. This applies to all of Emitter models in this folder.
+ */
 class SnowEmitter {
     
     static func getEmitter(withImage image: UIImage) -> CAEmitterLayer {
